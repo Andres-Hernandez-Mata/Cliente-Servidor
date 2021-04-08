@@ -12,3 +12,5 @@ localIP = "127.0.0.1"
 localPort = 2000
 bufferSize = 1024
 
+UDPServerSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
