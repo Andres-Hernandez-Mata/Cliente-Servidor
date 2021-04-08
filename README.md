@@ -13,3 +13,50 @@ Toda comunicación requiere que se establezca de antemano un protocolo. El proto
 
 ## Servidor UDP
 Siguiendo con el protocolo de preguntas y respuestas, el servidor UDP recibe las preguntas del cliente y se envian las respuestas.
+
+## Ejecucion
+Para que el chat funcione, debes ejecutar primero el programa del servidor (udp_servidor.py).
+
+```python	
+
+> python src\udp_servidor.py
+
+```
+**Salida**
+
+```
+El servidor UDP listo para recibir preguntas del cliente
+```
+
+A continuación, en otra ventana de IDLE ejecuta el programa del cliente (udp_cliente.py).
+
+```python	
+
+> python src\udp_cliente.py
+
+```
+
+Escribe una pregunta en la ventana de la consola del cliente.
+
+```	
+Ingrese una pregunta: ¿HTML es un lenguaje de programacion?
+```
+
+Escribe una respuesta en la ventana de la consola del servidor.
+
+```	
+Pregunta: ¿HTML es un lenguaje de programacion?
+Cliente: 127.0.0.1
+Ingrese una respuesta: NOOOOO
+```
+
+Para finalizar la conexión del cliente, en la pregunta escribe la palabra “bye” (sin comillas).
+
+```	
+Respuesta: NOOOOO
+Ingrese una pregunta: bye
+```
+
+## Ejemplo
+
+![texto cualquiera por si no carga la imagen](img/ejecutar.png)
