@@ -19,12 +19,12 @@ print("El servidor UDP listo para recibir preguntas del cliente")
 
 
 while(True):
-    recibido = UDPServerSocket.recvfrom(bufferSize)
+    recibido = UDPServerSocket.recvfrom(bufferSize)    
     mensaje = recibido[0]
     ip = recibido[1]
     print("Pregunta: " + mensaje.decode())
-    print("Cliente: " + ip)
-    respuesta = input("Respuesta: ")
+    print("Cliente: " + recibido[1][0])
+    respuesta = input("Ingrese una respuesta: ")
     UDPServerSocket.sendto(str.encode(respuesta), ip)
 
-    
+
