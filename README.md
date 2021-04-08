@@ -14,6 +14,12 @@ Toda comunicación requiere que se establezca de antemano un protocolo. El proto
 ## Servidor UDP
 Siguiendo con el protocolo de preguntas y respuestas, el servidor UDP recibe las preguntas del cliente y se envian las respuestas.
 
+## Sistema Operativo
+- Windows 10
+
+## Version
+- Python 3.9.1
+
 ## Ejecucion
 Para que el chat funcione, debes ejecutar primero el programa del servidor (udp_servidor.py).
 
