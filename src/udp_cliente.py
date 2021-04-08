@@ -14,3 +14,14 @@ bufferSize = 1024
 
 UPDClienteSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+while(True):
+    pregunta = input("Ingrese una pregunta: ")
+    if pregunta == "bye":
+        UPDClienteSocket.close()
+        sys.exit()
+    else:
+        UPDClienteSocket.sendto(str.encode(pregunta), servidor)
+        mensaje = UPDClienteSocket.recvfrom(bufferSize)
+        respuesta = "Respuesta: " + mensaje[0].decode()
+        print(respuesta)
+
