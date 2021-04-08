@@ -14,3 +14,5 @@ bufferSize = 1024
 
 UDPServerSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
+UDPServerSocket.bind((localIP, localPort))
+print("El servidor UDP listo para recibir preguntas del cliente")
