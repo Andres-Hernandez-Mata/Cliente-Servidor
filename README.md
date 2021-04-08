@@ -65,4 +65,5 @@ Ingrese una pregunta: bye
 
 ## Ejemplo
 
-![texto cualquiera por si no carga la imagen](img/ejecutar.png)
+![Aqui hay una imagen del ejemplo para ejecutar los scripts](img/ejecutar.png)
+
