@@ -12,3 +12,5 @@ import sys
 servidor = ("127.0.0.1", 2000)
 bufferSize = 1024
 
+UPDClienteSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
