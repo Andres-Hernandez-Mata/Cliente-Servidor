@@ -16,3 +16,15 @@ UDPServerSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 UDPServerSocket.bind((localIP, localPort))
 print("El servidor UDP listo para recibir preguntas del cliente")
+
+
+while(True):
+    recibido = UDPServerSocket.recvfrom(bufferSize)
+    mensaje = recibido[0]
+    ip = recibido[1]
+    print("Pregunta: " + mensaje.decode())
+    print("Cliente: " + ip)
+    respuesta = input("Respuesta: ")
+    UDPServerSocket.sendto(str.encode(respuesta), ip)
+
+    
