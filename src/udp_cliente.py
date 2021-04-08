@@ -9,3 +9,6 @@ Fecha: 07 Abril 2020
 import socket
 import sys
 
+servidor = ("127.0.0.1", 2000)
+bufferSize = 1024
+
