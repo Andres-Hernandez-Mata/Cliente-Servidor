@@ -12,16 +12,16 @@ import sys
 servidor = ("127.0.0.1", 2000)
 bufferSize = 1024
 
-UPDClienteSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+UDPClientSocket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 while(True):
     pregunta = input("Ingrese una pregunta: ")
     if pregunta == "bye":
-        UPDClienteSocket.close()
+        UDPClientSocket.close()
         sys.exit()
     else:
-        UPDClienteSocket.sendto(str.encode(pregunta), servidor)
-        mensaje = UPDClienteSocket.recvfrom(bufferSize)
+        UDPClientSocket.sendto(str.encode(pregunta), servidor)
+        mensaje = UDPClientSocket.recvfrom(bufferSize)
         respuesta = "Respuesta: " + mensaje[0].decode()
         print(respuesta)
 
