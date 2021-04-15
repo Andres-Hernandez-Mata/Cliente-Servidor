@@ -1,7 +1,7 @@
 # Cliente-Servidor
 Conexiones remotas cliente-servidor
 
-## Introduccion
+## Introducción
 Establecer conexiones entre computadoras a través de las redes de datos es una de las prácticas más comunes en los sistemas. Para esto, los sistemas operativos implementan un conjunto de protocolos o reglas de comunicación que les permiten establecer las conexiones para comunicarse entre equipos remotos.
 
 Hay dos protocolos que permiten establecer conexiones entre sistemas remotos para comunicación: TCP (Transfer Control Protocol) que es orientado a la conexión, y UDP (User Datagram Protocol) que no es orientado a la conexión, es decir, cuyas conexiones no son estrictas.
@@ -17,10 +17,17 @@ Siguiendo con el protocolo de preguntas y respuestas, el servidor UDP recibe las
 ## Sistema Operativo
 - Windows 10
 
-## Version
+## Versión
 - Python 3.9.1
 
-## Ejecucion
+## Instalación
+```python	
+
+> pip install -r requirements.txt
+
+```
+
+## Ejecución
 Para que el chat funcione, debes ejecutar primero el programa del servidor (udp_servidor.py).
 
 ```python	
@@ -65,5 +72,5 @@ Ingrese una pregunta: bye
 
 ## Ejemplo
 
-![Aqui hay una imagen del ejemplo para ejecutar los scripts](img/ejecutar.png)
+![Aqui hay una imagen del ejemplo para ejecutar los scripts](img/bye.png)
 
