@@ -41,7 +41,7 @@ Para que el chat funcione, debes ejecutar primero el programa del servidor (udp_
 El servidor UDP listo para recibir preguntas del cliente
 ```
 
-A continuación, en otra ventana de IDLE ejecuta el programa del cliente (udp_cliente.py).
+A continuación, en otra terminal ejecuta el programa del cliente (udp_cliente.py).
 
 ```python	
 
@@ -63,7 +63,7 @@ Cliente: 127.0.0.1
 Ingrese una respuesta: NOOOOO
 ```
 
-Para finalizar la conexión del cliente, en la pregunta escribe la palabra “bye” (sin comillas).
+Para finalizar la conexión del cliente y servidor, en la pregunta escribe la palabra “bye” (sin comillas).
 
 ```	
 Respuesta: NOOOOO
